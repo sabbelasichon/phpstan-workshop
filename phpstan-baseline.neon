@@ -1,0 +1,6 @@
+parameters:
+	ignoreErrors:
+		-
+			message: "#^Function isBadFunction\\(\\) has parameter \\$whatIsInsideWeDoNotKnow with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: legacy/bad_file.php

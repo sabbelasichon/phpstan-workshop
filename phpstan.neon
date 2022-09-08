@@ -1,0 +1,18 @@
+services:
+    -
+        class: Symplify\PHPStanRules\Rules\ForbiddenNodeRule
+        tags: [phpstan.rules.rule]
+        arguments:
+            forbiddenNodes:
+                - PhpParser\Node\Expr\ErrorSuppress
+includes:
+    - vendor/symplify/phpstan-rules/config/services/services.neon
+    - phpstan-baseline.neon
+    #- vendor/symplify/phpstan-rules/config/configurable-rules.neon
+    #- vendor/phpstan/phpstan-strict-rules/rules.neon
+parameters:
+    level: 7
+    paths:
+        - legacy
+        - src
+    #checkMissingIterableValueType: false
