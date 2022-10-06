@@ -35,7 +35,7 @@ final class Controller
         if ( ! $object instanceof CarModel) {
             throw new UnexpectedValueException('Wrong type given');
         }
-        
+
         $object->startEngine();
         $object->fillWithLiters(101);
     }

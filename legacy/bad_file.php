@@ -36,7 +36,7 @@ function isBadFunction(array $whatIsInsideWeDoNotKnow, bool $thisHasNoType): boo
 $myObject = GeneralUtility::makeInstance(NonExistingClass::class);
 $myObject->count();
 
-$content = @file_get_contents(__DIR__. '/some.json');
+$content = \file_get_contents(__DIR__. '/some.json');
 if(is_string($content)) {
     $decodedArray = json_decode($content, true);
     var_dump($decodedArray);

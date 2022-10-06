@@ -34,4 +34,9 @@ final class CarModel
     {
 
     }
+
+    public function getAmountOfLiters(): int
+    {
+        return $this->amountOfLiters;
+    }
 }
