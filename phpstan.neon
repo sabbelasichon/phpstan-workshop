@@ -11,7 +11,7 @@ includes:
     #- vendor/symplify/phpstan-rules/config/configurable-rules.neon
     #- vendor/phpstan/phpstan-strict-rules/rules.neon
 parameters:
-    level: 7
+    level: max
     paths:
         - legacy
         - src
