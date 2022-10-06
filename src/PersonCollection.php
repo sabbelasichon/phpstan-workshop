@@ -4,12 +4,15 @@ declare(strict_types=1);
 
 final class PersonCollection
 {
+    /**
+     * @var Person[]
+     */
     private array $persons;
 
     private int $limit = 0;
 
     /**
-     * @param array<Person> $persons
+     * @param Person[] $persons
      */
     public function __construct(array $persons)
     {
