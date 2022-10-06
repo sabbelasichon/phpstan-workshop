@@ -32,12 +32,20 @@ final class Controller
 
     public function genericMethodFromFramework(object $object): void
     {
-        if ( ! $object instanceof CarModel) {
-            throw new UnexpectedValueException('Wrong type given');
-        }
+        $this->checkType($object);
 
         $object->startEngine();
         $object->fillWithLiters(100);
+    }
+
+    /**
+     * @return ($object is CarModel ? void : never)
+     */
+    protected function checkType(object $object): void
+    {
+        if ( ! $object instanceof CarModel) {
+            throw new UnexpectedValueException('Wrong type given');
+        }
     }
 
 }
