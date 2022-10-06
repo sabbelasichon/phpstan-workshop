@@ -9,6 +9,8 @@ final class Controller
     public function __construct()
     {
         $this->defaultCar = new CarModel('hybid');
+        $personCollection = new PersonCollection([]);
+        $persons = $personCollection->getPersons();
     }
 
     public function someAction(CarModel $car = null): void
