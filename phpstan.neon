@@ -11,6 +11,9 @@ includes:
     #- vendor/symplify/phpstan-rules/config/configurable-rules.neon
     #- vendor/phpstan/phpstan-strict-rules/rules.neon
 parameters:
+    earlyTerminatingMethodCalls:
+        Controller:
+          - redirect
     stubFiles:
         - stubs/DoExpressCheckoutPaymentResponseDetailsType.stub
         - stubs/PaymentInfoType.stub
