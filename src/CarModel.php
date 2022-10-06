@@ -2,11 +2,18 @@
 declare(strict_types=1);
 
 
+
 final class CarModel
 {
+    /**
+     * @phpstan-var CarType::*
+     */
     private string $type;
     private int $amountOfLiters;
 
+    /**
+     * @phpstan-param CarType::* $type
+     */
     public function __construct(string $type)
     {
         $this->type = $type;
@@ -20,6 +27,9 @@ final class CarModel
         $this->amountOfLiters = $amountOfLiters;
     }
 
+    /**
+     * @phpstan-return CarType::*
+     */
     public function getType(): string
     {
         return $this->type;

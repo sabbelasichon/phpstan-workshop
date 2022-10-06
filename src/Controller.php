@@ -8,7 +8,7 @@ final class Controller
 
     public function __construct()
     {
-        $this->defaultCar = new CarModel('hybid');
+        $this->defaultCar = new CarModel(CarType::CLASSIC_TYPE);
         $personCollection = new PersonCollection([]);
         $persons = $personCollection->getPersons();
     }

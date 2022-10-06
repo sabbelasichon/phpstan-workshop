@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 final class CarType
 {
-    public const HYBRID = 'hybrid';
+    public const HYBRID_TYPE = 'hybrid';
 
-    public const ELECTRIC = 'electric';
+    public const ELECTRIC_TYPE = 'electric';
 
-    public const CLASSIC = 'classic';
+    public const CLASSIC_TYPE = 'classic';
 }
