@@ -37,7 +37,7 @@ final class Controller
         }
 
         $object->startEngine();
-        $object->fillWithLiters(101);
+        $object->fillWithLiters(100);
     }
 
 }

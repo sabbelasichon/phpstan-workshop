@@ -12,11 +12,11 @@ final class CarModel
         $this->type = $type;
     }
 
+    /**
+     * @param int<0, 100> $amountOfLiters
+     */
     public function fillWithLiters(int $amountOfLiters): void
     {
-        if($amountOfLiters > 100) {
-            throw new InvalidArgumentException('No, you cannot fill the tank with more than 100 liters');
-        }
         $this->amountOfLiters = $amountOfLiters;
     }
 
