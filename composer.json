@@ -16,5 +16,9 @@
     ],
     "autoload": {
         "classmap": ["src"]
+    },
+    "require": {
+        "paypal/sdk-core-php": "^3.4",
+        "paypal/merchant-sdk-php": "^3.12"
     }
 }
