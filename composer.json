@@ -5,7 +5,8 @@
     "require-dev": {
         "phpstan/phpstan": "^1.8",
         "phpstan/phpstan-strict-rules": "^1.4",
-        "symplify/phpstan-rules": "^11.1"
+        "symplify/phpstan-rules": "^11.1",
+        "phpunit/phpunit": "^9.5"
     },
     "license": "MIT",
     "authors": [
@@ -16,6 +17,12 @@
     ],
     "autoload": {
         "classmap": ["src"]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "P2Media\\PhpStan\\": "utils/phpstan/src",
+            "P2Media\\PhpStan\\Tests\\": "utils/phpstan/tests"
+        }
     },
     "require": {
         "paypal/sdk-core-php": "^3.4",

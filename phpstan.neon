@@ -1,5 +1,11 @@
 services:
     -
+        class: P2Media\PhpStan\rules\ForbiddenFuncCallRule
+        tags: [phpstan.rules.rule]
+        arguments:
+            funcNames:
+                - var_dump
+    -
         class: Symplify\PHPStanRules\Rules\ForbiddenNodeRule
         tags: [phpstan.rules.rule]
         arguments:
